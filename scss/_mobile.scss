@@ -1,6 +1,8 @@
 @media screen and (max-width: 979px) {
   body { -webkit-text-size-adjust: none; }
 
+  .mobile-nav select { padding: 6px 3px; }
+
   #main-content { width: 73%; }
   .aside { width: 22%; margin-left: 2%; }
   #main-content .col-2 { width: 31%; margin-left: 3%; }
