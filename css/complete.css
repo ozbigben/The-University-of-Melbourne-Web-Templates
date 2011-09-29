@@ -434,6 +434,9 @@ button {
   body {
     -webkit-text-size-adjust: none; }
 
+  .mobile-nav select {
+    padding: 6px 3px; }
+
   #main-content {
     width: 73%; }
 
@@ -1813,7 +1816,7 @@ body.yellow-home #headingtext p.title {
   width: auto;
   max-width: 930px; }
 
-/*  IE Fixes  */
+/*  IE Fixes 6/7  */
 .header .hgroup p {
   *top: 8px; }
 
@@ -1840,13 +1843,15 @@ a.button:hover, a.button:focus {
 table td {
   *border: 1px solid #b9cfe7; }
 
-.wrapper {
-  *max-width: none;
-  *width: 960px; }
+/*  IE Fixes 6/7/8 */
+@media \0screen\,screen\9 {
+  .wrapper {
+    max-width: none;
+    width: 960px; }
 
-#newsbanner {
-  *width: auto;
-  *max-width: 930px; }
+  #newsbanner {
+    width: auto;
+    max-width: 930px; } }
 
 @media print {
   * {
